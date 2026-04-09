@@ -1,0 +1,165 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #ff7a18, #ffb347);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.back {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.back:hover {
+    opacity: 0.8;
+}
+
+/* HERO */
+.hero {
+    height: 65vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://blogs.revv.co.in/blogs/wp-content/uploads/2020/07/Alibaug.jpg") center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* SECTION */
+.section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #ff7a18;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.section p {
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+}
+
+/* ALTERNATE BACKGROUND */
+.alt {
+    background: linear-gradient(to right, #eef2f3, #ffffff);
+}
+
+/* GRID */
+.grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-top: 5px solid #ff7a18;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* CARD IMAGE */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* CARD TEXT */
+.card h3 {
+    color: #1e90ff;
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 10px 15px;
+    font-size: 0.9rem;
+}
+
+/* LIST */
+.list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.list li {
+    padding: 10px;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.list li:hover {
+    color: #ff7a18;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        padding: 10px 20px;
+    }
+}

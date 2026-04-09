@@ -1,0 +1,146 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f0fdf4;
+    color: #2f3e46;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #2d6a4f, #52b788);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.back {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 65vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/10/20205503/lonavvala.jpeg") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* SECTION */
+.section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #2d6a4f;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+}
+
+/* ALT */
+.alt {
+    background: linear-gradient(to right, #e9f5ec, #ffffff);
+}
+
+/* GRID */
+.grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border-left: 5px solid #52b788;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #2d6a4f;
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 10px 15px;
+}
+
+/* LIST */
+.list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.list li {
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.list li:hover {
+    color: #2d6a4f;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+    background: #1b4332;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,184 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #1e3c72;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+/* HERO (GENERAL) */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* CONTAINER FIX */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+    min-height: 70vh;
+}
+
+/* CARD IMPROVEMENT */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    width: 350px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* PROFILE IMAGE */
+.profile img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* FORM FIX */
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+}
+
+/* PROFILE (CONTACT PAGE) */
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+/* FORM */
+.form input,
+.form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form textarea {
+    height: 100px;
+}
+
+/* BUTTON */
+button {
+    background: #1e3c72;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 90%;
+}
+
+button:hover {
+    background: #2a5298;
+}
+
+/* LIST (CITY PAGES) */
+.list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.list li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* ALT SECTION (DIFFERENT BACKGROUND) */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section.alt {
+    background: #eaf0f7;
+}
+
+/* FOOTER */
+footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
